@@ -58,3 +58,27 @@ nav {
 .logo {
     width: 300px;
 }
+
+/* Header */
+.main-header {
+    position: relative;    
+}
+
+.main-header div {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    z-index: 10;
+    width: 50%;
+}
+
+.main-header h1 {
+    padding-bottom: 40px;
+}
+
+.main-header img {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 50%;
+}
