@@ -1,5 +1,4 @@
 body {
-    background-color: aqua;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -73,7 +72,27 @@ nav {
 }
 
 .logo {
+    display: none;
     width: 300px;
+    transition: all ease .5;
+}
+
+.red-pixel {
+    height: 50px;
+    width: 50px;
+    background-color: #f10;
+}
+
+.red-pixel:hover .logo {
+    display: inline;
+}
+
+@-webkit-keyframes slide-left {
+    100% { left: 0; }
+}
+
+@keyframes slide-left {
+    100% { left: 0; }
 }
 
 /* Header */
