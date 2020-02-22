@@ -69,30 +69,48 @@ nav {
     height: 50px;
     padding: 1rem 2rem;
     border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.logo-container {
+    overflow: hidden;
 }
 
 .logo {
     display: none;
     width: 300px;
-    transition: all ease .5;
+    z-index: 5;
+}
+
+.logo-container {
+    animation: slide 1s backwards;
+    width: 25%;
 }
 
 .red-pixel {
     height: 50px;
     width: 50px;
     background-color: #f10;
+    position: relative;
+    z-index: 10;
+    
 }
 
-.red-pixel:hover .logo {
+.logo-container:hover .logo {
     display: inline;
+    position: absolute;
+    -webkit-animation: slide 1s forwards;
+    animation: slide 1s forwards;
 }
 
-@-webkit-keyframes slide-left {
-    100% { left: 0; }
+@-webkit-keyframes slide {
+    0% {left: -250px}
+    100% { left: 60px; }
 }
 
-@keyframes slide-left {
-    100% { left: 0; }
+@keyframes slide {
+    0% {left: -250px}
+    100% { left: 60px; }
 }
 
 /* Header */
