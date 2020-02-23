@@ -68,23 +68,12 @@ section {
 nav {
     height: 50px;
     padding: 1rem 2rem;
-    border-bottom: 1px solid black;
-    overflow: hidden;
 }
 
 .logo-container {
     overflow: hidden;
-}
-
-.logo {
-    display: none;
-    width: 300px;
-    z-index: 5;
-}
-
-.logo-container {
-    animation: slide 1s backwards;
-    width: 25%;
+    position: relative;
+    width: 400px;
 }
 
 .red-pixel {
@@ -92,24 +81,38 @@ nav {
     width: 50px;
     background-color: #f10;
     position: relative;
-    z-index: 10;
-    
+}
+
+.logo {
+    width: 300px;
+    position: absolute;
+    left: 60px;
+    -webkit-animation: slide-right 1s forwards;
+    animation: slide-right 1s forwards;
+}
+
+@-webkit-keyframes slide-right {
+    0% {left: 60}
+    100% { left: -300px; }
+}
+
+@keyframes slide-right {
+    0% {left: 60}
+    100% { left: -300px; }
 }
 
 .logo-container:hover .logo {
-    display: inline;
-    position: absolute;
-    -webkit-animation: slide 1s forwards;
-    animation: slide 1s forwards;
+    -webkit-animation: slide-left 1s forwards;
+    animation: slide-left 1s forwards;
 }
 
-@-webkit-keyframes slide {
-    0% {left: -250px}
+@-webkit-keyframes slide-left {
+    0% {left: -300px}
     100% { left: 60px; }
 }
 
-@keyframes slide {
-    0% {left: -250px}
+@keyframes slide-left {
+    0% {left: -300px}
     100% { left: 60px; }
 }
 
