@@ -66,6 +66,7 @@ section {
 
 /* Nav */
 nav {
+    position: fixed;
     height: 50px;
     padding: 1rem 2rem;
 }
@@ -118,9 +119,11 @@ nav {
 
 /* Header */
 .main-header {
-    position: relative;   
-    height: 500px; 
-    border-bottom: 1px solid black;
+    height: 80vh; 
+    background-image: url('../img/desk-work.jpg');
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
 }
 
 .main-header .content {
@@ -128,16 +131,12 @@ nav {
     top: 16%;
     left: 10%;
     z-index: 10;
-    width: 60%;
+    max-width: 560px;
+    background: #ffffff69;
+    padding: 40px 55px 60px 55px;
 }
 
 .main-header h1 {
     padding-bottom: 10px;
-}
-
-.main-header img {
-    position: absolute;
-    top: 7%;
-    left: 40%;
-    width: 50%;
+    margin-top: 0;
 }
