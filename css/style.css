@@ -47,16 +47,13 @@ section {
     color: #f10;
 }
 
-.red-border-bottom {
+.red-heading {
     padding-bottom: 1rem;
     border-bottom: 5px solid #f10;
-}
-
-.center {
+    width: 100%;
     text-align: center;
-    width: 50%;
     margin: 0 auto;
-
+    max-width: 450px;
 }
 
 .full-btn {
@@ -142,8 +139,18 @@ nav {
     margin-top: 0;
 }
 
-/* Video */
-#video {
+/* Creative */
+.creative-section .video-container {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.video-vin {
+    width: 100%;
+}
+
+/* instagram */
+#instagram {
     max-width: 100%;
     padding: 0;
 }
