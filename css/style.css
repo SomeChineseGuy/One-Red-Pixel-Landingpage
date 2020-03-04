@@ -140,13 +140,31 @@ nav {
 }
 
 /* Creative */
+
 .creative-section .video-container {
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    height: 550px;
 }
 
 .video-vin {
     width: 100%;
+    height: inherit;
+}
+
+/* info */
+.info-section {
+    display: flex;
+    height: 30vh;
+}
+
+.info-section .info-image {
+    background: url('../img/kris.jpg');
+    height: auto;
+}
+
+.info-section div {
+    width: 50%;
 }
 
 /* instagram */
