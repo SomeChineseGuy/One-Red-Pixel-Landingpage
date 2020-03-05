@@ -144,8 +144,42 @@ nav {
     margin-top: 0;
 }
 
-/* Creative */
+/* Three words */
+.three-words {
+    display: flex;
+    justify-content: space-around;
+}
 
+.three-words .container {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.three-words .image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.three-words .digital {
+    background-image: url('../img/digital.jpg');
+}
+
+.three-words .animation {
+    background-image: url('../img/animation.jpg');
+}
+
+.three-words .motion {
+    background-image: url('../img/motion.jpg');
+}
+/* Creative */
 .creative-section .video-container {
     text-align: center;
     padding: 2rem 0;
