@@ -148,9 +148,13 @@ nav {
 /* What we Do */
 .what-we-do {
     height: 60vh;
-    background: red;
     max-width: inherit;
     padding: 4rem 0;
+}
+
+.wwd-heading {
+    text-align: center;
+
 }
 
 .what-we-do .btn {
@@ -160,6 +164,18 @@ nav {
 
 .what-we-do .accordion-inner:last-child .btn {
     border-bottom: 1px solid black;
+}
+
+.accordion-inner.green {
+    background: green;
+}
+
+.accordion-inner.yellow {
+    background: yellow;
+}
+
+.accordion-inner.orange {
+    background: orange
 }
 
 
