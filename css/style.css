@@ -147,7 +147,6 @@ nav {
 
 /* What we Do */
 .what-we-do {
-    height: 60vh;
     max-width: inherit;
     padding: 4rem 0;
 }
@@ -159,11 +158,23 @@ nav {
 
 .what-we-do .btn {
     padding: 1rem;
-    border-top: 1px solid black;
 }
 
-.what-we-do .accordion-inner:last-child .btn {
-    border-bottom: 1px solid black;
+.what-we-do .btn h3 {
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 40px;
+} 
+
+.accordion-content {
+    padding: 2rem 0;
+}
+
+.accordion-content h2 {
+    text-align: center;
+    margin-top: 0;
 }
 
 .accordion-inner.green {
@@ -180,7 +191,7 @@ nav {
 
 
 /* Creative */
-.creative-section .video-container {
+.video-container {
     text-align: center;
     padding: 2rem 0;
     height: 550px;
