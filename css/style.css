@@ -40,7 +40,7 @@ a {
 section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .red {
@@ -48,12 +48,12 @@ section {
 }
 
 .red-heading {
-    padding-bottom: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
     border-bottom: 5px solid #f10;
-    width: 100%;
+    width: fit-content;
     text-align: center;
     margin: 0 auto;
-    max-width: 450px;
+    
 }
 
 .full-btn {
@@ -67,6 +67,7 @@ nav {
     position: fixed;
     height: 50px;
     padding: 1rem 2rem;
+    z-index: 100;
 }
 
 .logo-container {
@@ -148,6 +149,7 @@ nav {
 .three-words {
     display: flex;
     justify-content: space-around;
+    padding-top: 2rem;
 }
 
 .three-words .container {
@@ -155,7 +157,7 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .three-words .image {
