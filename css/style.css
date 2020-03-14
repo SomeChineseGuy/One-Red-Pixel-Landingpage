@@ -145,42 +145,24 @@ nav {
     margin-top: 0;
 }
 
-/* Three words */
-.three-words {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
+/* What we Do */
+.what-we-do {
+    height: 60vh;
+    background: red;
+    max-width: inherit;
+    padding: 4rem 0;
 }
 
-.three-words .container {
-    width: 30%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.what-we-do .btn {
+    padding: 1rem;
+    border-top: 1px solid black;
 }
 
-.three-words .image {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin: 0 auto;
-    background-position: center;
-    background-size: cover;
+.what-we-do .accordion-inner:last-child .btn {
+    border-bottom: 1px solid black;
 }
 
-.three-words .digital {
-    background-image: url('../img/digital.jpg');
-}
 
-.three-words .animation {
-    background-image: url('../img/animation.jpg');
-}
-
-.three-words .motion {
-    background-image: url('../img/motion.jpg');
-}
 /* Creative */
 .creative-section .video-container {
     text-align: center;
