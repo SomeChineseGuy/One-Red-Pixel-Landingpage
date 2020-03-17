@@ -177,18 +177,21 @@ nav {
     margin-top: 0;
 }
 
-.accordion-inner.green {
+.accordion.green {
     background: green;
 }
 
-.accordion-inner.yellow {
+.accordion.yellow {
     background: yellow;
 }
 
-.accordion-inner.orange {
+.accordion.orange {
     background: orange
 }
 
+.accordion-content {
+    display: none;
+}
 
 /* Creative */
 .video-container {

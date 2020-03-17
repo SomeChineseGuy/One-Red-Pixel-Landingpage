@@ -9,7 +9,9 @@ $(document).ready(function() {
     }, 1000);
 
     // Accordion
-    const creative = $('.btn.creative')
-    const digital = $('.btn.digital')
-    const animation = $('.btn.animation')
+    $('.accordion').click(function(){
+        $(this).toggleClass('open')
+        $(this).hasClass('open') ? $(".accordion-content", this).slideDown() : $(".accordion-content", this).slideUp()
+    })
+    
 });
