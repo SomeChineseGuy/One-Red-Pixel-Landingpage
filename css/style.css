@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+
 }
 
 h1 {
@@ -68,6 +69,8 @@ nav {
     height: 50px;
     padding: 1rem 2rem;
     z-index: 100;
+    border-bottom: 1px solid white;
+    width: 100%;
 }
 
 .logo-container {
@@ -118,7 +121,7 @@ nav {
 
 /* Header */
 .main-header {
-    height: 80vh; 
+    height: 80%; 
     width: 100%;
     background-position: center;
     object-fit: cover;
@@ -126,23 +129,32 @@ nav {
 
 .head-video {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
 }
 
 .main-header .content {
+    height: 100vh;
+    width: 100%;
     position: absolute;
-    top: 16%;
-    left: 10%;
+    top: 0;
+    left: 0;
     z-index: 10;
-    max-width: 560px;
-    background: #ffffff69;
-    padding: 40px 55px 60px 55px;
+    background: rgba(23,23,23,.8);
 }
 
 .main-header h1 {
-    padding-bottom: 10px;
-    margin-top: 0;
+    position: relative;
+    font-weight: 700;
+    color: transparent;
+    font-style: normal;
+    font-size: 10vw;
+    line-height: 9vw;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 2px #e20613;
+    display: inline-block;
+    z-index: 6;
 }
 
 /* What we Do */
