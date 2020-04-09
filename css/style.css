@@ -140,7 +140,11 @@ nav {
     top: 0;
     left: 0;
     z-index: 10;
-    background: rgba(23,23,23,.8);
+    background: rgba(23,23,23,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .main-header h1 {
@@ -152,9 +156,14 @@ nav {
     line-height: 9vw;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke: 2px #e20613;
+    -webkit-text-stroke: 2px black;
     display: inline-block;
     z-index: 6;
+}
+
+.main-header:hover h1 .red-hover {
+    -webkit-text-stroke: 2px #f10;
+    transition-duration: 1.2s;
 }
 
 /* What we Do */
