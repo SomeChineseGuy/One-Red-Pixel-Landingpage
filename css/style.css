@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-
+    background: rgba(23,23,23);
 }
 
 h1 {
@@ -27,11 +27,12 @@ h5 {
 
 h1, h2, h3, h4, h5, a {
     font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-
+    color: white;
 }
 
 a {
@@ -84,6 +85,7 @@ nav {
     width: 50px;
     background-color: #f10;
     position: relative;
+    z-index: 5;
 }
 
 .logo {
@@ -92,6 +94,7 @@ nav {
     left: 60px;
     -webkit-animation: slide-right 1s forwards;
     animation: slide-right 1s forwards;
+    z-index: 0;
 }
 
 @-webkit-keyframes slide-right {
@@ -140,7 +143,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 10;
-    background: rgba(23,23,23,.7);
+    background: rgba(23,23,23,.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,9 +164,13 @@ nav {
     z-index: 6;
 }
 
+.red-hover {
+    transition-duration: 1.2s;
+}
+
 .main-header:hover h1 .red-hover {
     -webkit-text-stroke: 2px #f10;
-    transition-duration: 1.2s;
+    
 }
 
 /* What we Do */
@@ -236,15 +243,27 @@ nav {
 }
 
 /* Creative */
-.video-container {
-    text-align: center;
-    padding: 2rem 0;
-    height: 550px;
+#creative-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.video-vin {
-    width: 100%;
-    height: inherit;
+#creative-section .left {
+    width: 40vw;
+}
+
+#creative-section .right {
+    width: 40%;
+}
+
+
+#creative-section .right .work-img {
+    width: 31.25vw;
+    background-image: url('../img/desk-work.jpg');
+    height: 500px;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 
 /* info */
@@ -266,4 +285,8 @@ nav {
 #instagram {
     max-width: 100%;
     padding: 0;
+}
+
+.eapps-instagram-feed-title {
+    color: white;
 }
