@@ -251,6 +251,19 @@ nav {
 
 #creative-section .left {
     width: 40vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#creative-section .left h2 {
+    font-size: 47px;
+    font-weight: 900;
+}
+
+#creative-section .left p {
+    line-height: 1.9;
 }
 
 #creative-section .right {
@@ -259,9 +272,9 @@ nav {
 
 
 #creative-section .right .work-img {
-    width: 31.25vw;
+    width: 36.25vw;
     background-image: url('../img/desk-work.jpg');
-    height: 500px;
+    height: 660px;
     background-repeat:no-repeat;
     background-position: center center;
 }
