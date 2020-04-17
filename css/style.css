@@ -302,3 +302,10 @@ nav {
 .eapps-instagram-feed-title {
     color: white;
 }
+
+/* Canvas Wave */
+canvas {
+    display: block;
+    position: relative;
+    z-index: -5;
+}
