@@ -17,4 +17,16 @@ $(document).ready(function() {
     //     $(this).hasClass('open') ? $(".btn", this).slideUp() : $(".btn", this).slideDown();
     // })
     
+    // Demo Reo
+    $(".playpause").fadeOut();
+    $('.video').parent().click(function () {
+        
+        if($(this).children(".video").get(0).paused){
+            $(this).children(".video").get(0).play();
+            $(this).children(".playpause").fadeOut();
+        }else{
+        $(this).children(".video").get(0).pause();
+            $(this).children(".playpause").fadeIn();
+        }
+    });
 });
