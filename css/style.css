@@ -72,6 +72,7 @@ nav {
     z-index: 100;
     border-bottom: 1px solid white;
     width: 100%;
+    
 }
 
 .logo-container {
@@ -344,4 +345,35 @@ canvas {
     z-index: -5;
     top: -950px;
     left: 0;
+}
+
+/* Client Project */
+#client-project h2 {
+    text-align: center;
+}
+
+#client-project article * {
+    margin: 0;
+}
+
+#client-project article {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+#client-project .video-container {
+    height: 315px;
+}
+
+#client-project iframe {
+    width: 600px;
+    height: inherit;
+}
+
+#client-project .description {
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
