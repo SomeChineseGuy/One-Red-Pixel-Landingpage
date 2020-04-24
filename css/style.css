@@ -152,17 +152,20 @@ nav {
 }
 
 .main-header h1 {
+    font-family: 'bebas_neueregular';
+    letter-spacing: 6px;
     position: relative;
     font-weight: 700;
     color: transparent;
     font-style: normal;
-    font-size: 10vw;
-    line-height: 9vw;
+    font-size: 11vw;
+    line-height: 10vw;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke: 2px black;
     display: inline-block;
     z-index: 6;
+    width: 80%;
 }
 
 .red-hover {
@@ -354,26 +357,4 @@ canvas {
 
 #client-project article * {
     margin: 0;
-}
-
-#client-project article {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
-}
-
-#client-project .video-container {
-    height: 315px;
-}
-
-#client-project iframe {
-    width: 600px;
-    height: inherit;
-}
-
-#client-project .description {
-    padding-left: 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }

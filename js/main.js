@@ -10,6 +10,11 @@ $(document).ready(function() {
         widget.hide()
     }, 3000);
 
+    var scroll = $(window).scrollTop();
+    if(scroll < 530) {
+        console.log("test")
+    }
+
     // Accordion
     // $('.accordion').click(function(){
     //     $(this).toggleClass('open');
