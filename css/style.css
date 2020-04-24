@@ -26,8 +26,10 @@ h5 {
 }
 
 h1, h2, h3, h4, h5, a {
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'bebas_neueregular';
     color: white;
+    
 }
 
 p {
@@ -310,21 +312,6 @@ nav {
     background-position: center;
 }
 
-/* info */
-.info-section {
-    display: flex;
-    height: 30vh;
-}
-
-.info-section .info-image {
-    background: url('../img/kris.jpg');
-    height: auto;
-}
-
-.info-section div {
-    width: 50%;
-}
-
 /* instagram */
 #instagram {
     max-width: 100%;
@@ -357,4 +344,15 @@ canvas {
 
 #client-project article * {
     margin: 0;
+}
+
+/* About */
+.info-image {
+    background: url('../img/kris.jpg');
+    height: 300px;
+    background-position: center;
+}
+
+.info-section div {
+    width: 50%;
 }
