@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 5rem;
 }
 
 h3 {
@@ -25,11 +25,12 @@ h5 {
     font-size: 1.5rem;
 }
 
-h1, h2, h3, h4, h5, a {
+h1, h2, h3, h4, h5 {
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'bebas_neueregular';
     color: white;
-    
+    letter-spacing: 6px;
+    color: #f10;
 }
 
 p {
@@ -91,7 +92,7 @@ nav {
     z-index: 5;
 }
 
-.logo {
+.logo-container .logo {
     width: 300px;
     position: absolute;
     left: 60px;
@@ -179,6 +180,47 @@ nav {
     
 }
 
+/* Creative */
+#creative-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#creative-section .left {
+
+}
+
+#creative-section .left h2 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+#creative-section .left p {
+    line-height: 1.9;
+}
+
+#creative-section .right {
+    width: 40%;
+}
+
+
+#creative-section .left .work-img {
+    width: 500px;
+    background: linear-gradient(0deg, rgba(255, 17, 0, 0.6), rgba(255, 17, 0, 0.6)), url('../img/desk-work.jpg');
+    height: 500px;
+    background-repeat:no-repeat;
+    background-position: center center;
+    float: right;
+    margin: 13px 0 20px 20px;
+}
+
+#creative-section .left .work-img:hover {
+    background-image: url('');
+}
+
+
 /* What we Do */
 .what-we-do {
     max-width: inherit;
@@ -246,42 +288,6 @@ nav {
 
 .accordion-content {
     display: none;
-}
-
-/* Creative */
-#creative-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#creative-section .left {
-
-}
-
-#creative-section .left h2 {
-    font-size: 47px;
-    font-weight: 900;
-    margin-top: 0;
-}
-
-#creative-section .left p {
-    line-height: 1.9;
-}
-
-#creative-section .right {
-    width: 40%;
-}
-
-
-#creative-section .left .work-img {
-    width: 500px;
-    background-image: url('../img/desk-work.jpg');
-    height: 500px;
-    background-repeat:no-repeat;
-    background-position: center center;
-    float: right;
-    margin: 13px 0 20px 20px;
 }
 
 /* Demo Reo */
