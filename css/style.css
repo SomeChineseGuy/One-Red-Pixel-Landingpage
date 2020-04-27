@@ -11,6 +11,7 @@ h1 {
 
 h2 {
     font-size: 5rem;
+    text-align: center;
 }
 
 h3 {
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5 {
 p {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    line-height: 1.9;
 }
 
 a {
@@ -198,7 +200,7 @@ nav {
 }
 
 #creative-section .left p {
-    line-height: 1.9;
+    
 }
 
 #creative-section .right {
@@ -369,6 +371,12 @@ canvas {
     background: url('../img/kris.jpg');
     height: 300px;
     background-position: center;
+    transition: all .5s ease-in;
+    margin-bottom: 5em;
+}
+
+.info-image:hover {
+    height: 900px;
 }
 
 .info-section div {
