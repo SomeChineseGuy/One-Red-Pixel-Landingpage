@@ -5,10 +5,17 @@ $(document).ready(function() {
     // });
 
     // Remove Ad button
-    setTimeout(() => {
-        var widget = $("#instagram #eapps-instagram-feed-1 > a[href$='https://elfsight.com/instagram-feed-instashow/?utm_source=websites&utm_medium=clients&utm_content=instagram-feed&utm_term=undefined&utm_campaign=free-widget']")
-        widget.hide()
-    }, 3000);
+    const removeAdButton = () => {
+        setTimeout(() => {
+            var widget = $("#instagram #eapps-instagram-feed-1 > a[href$='https://elfsight.com/instagram-feed-instashow/?utm_source=websites&utm_medium=clients&utm_content=instagram-feed&utm_term=undefined&utm_campaign=free-widget']");
+            if(widget === null) {
+                removeAdButton()
+            }
+            widget.hide()
+        }, 1000);
+    }
+    
+    removeAdButton();
 
     var scroll = $(window).scrollTop();
     if(scroll < 530) {
