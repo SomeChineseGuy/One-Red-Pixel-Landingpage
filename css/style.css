@@ -183,49 +183,41 @@ nav {
 }
 
 /* Creative */
-#creative-section {
+#creative-section  article{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 #creative-section .left {
-
-}
-
-#creative-section .left h2 {
-    font-size: 80px;
-    font-weight: 900;
-    margin-top: 0;
+    width: 60%;
+    padding-right: 25px;
 }
 
 #creative-section .left p {
-    
+    margin-top: 0;
 }
+
 
 #creative-section .right {
     width: 40%;
 }
 
-
-#creative-section .left .work-img {
-    width: 500px;
+#creative-section .work-img {
+    height: 100%;
+    width: 100%;
     background-image: url('../img/desk-work.jpg');
-    height: 500px;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
-    float: right;
-    margin: 13px 0 20px 20px;
 }
 
-#creative-section .left .work-img .overlay {
+#creative-section .work-img .overlay {
     height: 100%;
     width: 100%;
     background:rgba(255, 17, 0, 0.6);
     transition: all .5s ease-in;
 }
 
-#creative-section .left .work-img:hover .overlay {
+#creative-section .work-img:hover .overlay {
     background: none;
 }
 
@@ -358,6 +350,10 @@ canvas {
 }
 
 /* Client Project */
+#client-project {
+    padding-bottom: 0;
+}
+
 #client-project h2 {
     text-align: center;
 }
@@ -367,6 +363,10 @@ canvas {
 }
 
 /* About */
+#about {
+    padding-top: 0;
+}
+
 .info-image {
     background: url('../img/kris.jpg');
     height: 300px;

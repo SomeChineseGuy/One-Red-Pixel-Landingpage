@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // All init files
-    //  new WOW().init();
+     new WOW().init();
     //  var rellax = new Rellax('.rellax', {
     // });
 
