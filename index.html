@@ -9,13 +9,15 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Maven+Pro|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cd7e20452a.js"></script>
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- jQuery -->
     <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <!-- <link rel="stylesheet" href="css/carousel.css"> -->
     <script src="https://apps.elfsight.com/p/platform.js"></script>
 </head>
 <body>
@@ -23,6 +25,7 @@
         <div class="logo-container">
             <a href="http://oneredpixel.ca/"><div class="red-pixel"><img src="img/logobanner.png" alt="One Red Pixel Logo" class="logo"></div></a>
         </div>
+        <a href="#contact" class="icon"><i class="far fa-envelope fa-3x"></i></a>
     </nav>
     <header class="main-header">
         <video poster="img/desk-work.jpg" class="head-video" playsinline autoplay muted loop>
@@ -51,10 +54,11 @@
 
     <section id="demo-reo">
         <h2>Demo</h2>
-        <video poster="img/desk-work.jpg" class="video" playsinline autoplay muted loop>
+        <video poster="img/desk-work.jpg" class="video" id="demo-video" playsinline autoplay muted loop>
             <source src="video/demo.mp4" type="video/mp4">
         </video>
         <div class="playpause"></div>
+        <div class="sound-toggle">Sound On</div>
     </section>
 
     <section id="instagram" class="animated fadeIn">
@@ -64,7 +68,7 @@
     <section id="client-project" class="row wow fadeIn">
         <h2>Previous Clients</h2>
         <div class="nine columns">
-            <div class="coverflow top10 bot10">
+            <!-- <div class="coverflow top10 bot10">
                 <a class="prev-arrow"></a>
                 <a href=""><img class="coverflow__image" src="img/Logos/Allstate_logo.png" alt=""></a>
                 <a href=""><img class="coverflow__image" src="img/Logos/bayer_logo.png" alt=""></a>
@@ -77,7 +81,7 @@
                 <a href=""><img class="coverflow__image" src="img/Logos/Kraft.png" alt=""></a>
                 <a href=""><img class="coverflow__image" src="img/Logos/Lundbeck_logo.png" alt=""></a>
                 <a class="next-arrow"></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -89,14 +93,33 @@
         <div class="info-image wow fadeIn"></div>
 
     </section>
+    <section class="contact" id="contact">
+        <h2>Get In Contact</h2>
+        <form action="POST">
+            <div>
+                <h5>Name</h5>
+                <input type="text">
+            </div>
+            <div>
+                <h5>Email</h5>
+                <input type="text">
+            </div>
+            <div>
+                <h5>Message</h5>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button-container">
+                <button>Send</button>
+            </div>
+            
+        </form>
+    </section>
+
     <footer>
 
     </footer>
-
-    <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/rellax.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/wave.js"></script>
+    <!-- <script src="js/wave.js"></script> -->
 </body>
 </html>

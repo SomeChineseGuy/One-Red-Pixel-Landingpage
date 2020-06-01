@@ -32,7 +32,6 @@ $(document).ready(function() {
     // Demo Reo
     $(".playpause").fadeOut();
     $('.video').parent().click(function () {
-        
         if($(this).children(".video").get(0).paused){
             $(this).children(".video").get(0).play();
             $(this).children(".playpause").fadeOut();
@@ -41,4 +40,19 @@ $(document).ready(function() {
             $(this).children(".playpause").fadeIn();
         }
     });
+
+    
+
+    $('.sound-toggle').click(function () {
+        if( $('.video').prop('muted', true)) {
+            $('.sound-toggle').addClass('off');
+            $('.video').prop('muted', false).addClass('sound-on')
+            console.log('sound-on')
+        } else {
+            $('.video').peop('muted', true)
+            $('.sound-toggle').removeClass('off')
+            console.log('sound-off')
+        }
+    })
+
 });
