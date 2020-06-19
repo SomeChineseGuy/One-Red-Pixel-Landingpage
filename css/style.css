@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     background: rgba(23,23,23);
 }
 
@@ -34,10 +34,31 @@ h1, h2, h3, h4, h5 {
     color: #f10;
 }
 
-p {
+p,li {
     font-family: 'Montserrat', sans-serif;
     color: white;
     line-height: 1.9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info li {
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+.info li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background: red;
+    
 }
 
 a {
@@ -178,7 +199,7 @@ nav {
     font-weight: 700;
     color: transparent;
     font-style: normal;
-    font-size: 11vw;
+    font-size: 10vw;
     line-height: 10vw;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
@@ -394,6 +415,7 @@ canvas {
 
 .about-section {
     display: flex;
+    position: relative;
 }
 
 .about-section p {
@@ -410,6 +432,18 @@ canvas {
     background-position: center;
     transition: all .5s ease-in;
     margin-bottom: 5em;
+    position: relative;
+}
+
+.info-image:before {
+    content: '';
+    height: 575px;
+    width: 590px;
+    background: red;
+    position: absolute;
+    z-index: -1;
+    left: -3%;
+    top: 4%;
 }
 
 .info-section div {

@@ -1,8 +1,6 @@
 $(document).ready(function() {
     // All init files
      new WOW().init();
-    //  var rellax = new Rellax('.rellax', {
-    // });
 
     // Remove Ad button
     const removeAdButton = () => {
@@ -17,17 +15,14 @@ $(document).ready(function() {
     
     removeAdButton();
 
-    var scroll = $(window).scrollTop();
-    if(scroll < 530) {
-        console.log("test")
-    }
+    // Carousel
+    var stackedCard = new stackedCards({
+	 	selector: '.mycards',
+	 	layout: "slide",
+	 	transformOrigin: "center",
+	});
 
-    // Accordion
-    // $('.accordion').click(function(){
-    //     $(this).toggleClass('open');
-    //     $(this).hasClass('open') ? $(".accordion-content", this).slideDown() : $(".accordion-content", this).slideUp();
-    //     $(this).hasClass('open') ? $(".btn", this).slideUp() : $(".btn", this).slideDown();
-    // })
+	stackedCard.init();
     
     // Demo Reo
     $(".playpause").fadeOut();
@@ -42,7 +37,6 @@ $(document).ready(function() {
     });
 
     
-
     $('.sound-toggle').click(function () {
         if( $('.video').prop('muted', true)) {
             $('.sound-toggle').addClass('off');
